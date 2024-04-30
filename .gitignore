@@ -1,0 +1,6 @@
+# File and Dir
+Build/
+__pycache__/
+.vscode
+.DS_Store
+*.pyc
