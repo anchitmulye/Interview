@@ -2,7 +2,7 @@
 
 PROJECT_HOME=`git rev-parse --show-toplevel`
 BUILD_DIR=Build
-PROJECT_NAME="DSA/LeetCode"
+PROJECT_NAME="DSA/CrackingTheCodingInterview"
 FILE_NAME=
 BUILD_LANGUAGE=
 
@@ -23,7 +23,7 @@ build_run_python() {
 build_run_cpp() {
     mkdir -p $PROJECT_HOME/$BUILD_DIR
     cd $PROJECT_HOME/$PROJECT_NAME/C++
-    g++ $FILE_NAME -o $PROJECT_HOME/$BUILD_DIR/Main
+    g++ -std=c++17 $FILE_NAME -o $PROJECT_HOME/$BUILD_DIR/Main
     cd $PROJECT_HOME/$BUILD_DIR
     ./Main
 }
